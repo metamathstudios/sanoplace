@@ -1,0 +1,15 @@
+.container {
+  width: 500px;
+  height: 440px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  flex-direction: column;
+
+  .title {
+    height: 200px;
+    background-color: red;
+  }
+}
