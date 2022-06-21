@@ -1,3 +1,4 @@
+import FarForm from "../FagerstromForm";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
@@ -8,6 +9,7 @@ const Dash = () => {
     <div className={styles.container}>
       <Navbar />
       <Sidebar />
+      <FarForm />
     </div>
   );
 };
