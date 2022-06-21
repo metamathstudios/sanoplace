@@ -1,0 +1,53 @@
+.screenContainer {
+    width: 100%;
+    border: solid transparent;
+  .container {
+    width: 85%;
+    flex-direction: row-reverse;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    font-family: Poppins, sans-serif;
+
+    .titleContainer {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      font-size: 50px;
+      font-weight: bold;
+      color: var(--blue);
+    }
+
+    .subtitleContainer {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      font-size: 15px;
+    }
+
+    .selectContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nextButtonContainer {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .nextButton {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        padding: 10px 0px 10px 0px;
+        background-color: var(--blue);
+        border-radius: 30px;
+        color: white;
+      }
+    }
+  }
+}
