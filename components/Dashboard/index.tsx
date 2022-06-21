@@ -9,7 +9,7 @@ const Dash = () => {
   return (
     <div className={styles.container}>
       <Navbar />
-      <Sidebar />
+      <Sidebar Image={"avatar.jpg"} />
       <FarForm />
       <SusForm />
     </div>
