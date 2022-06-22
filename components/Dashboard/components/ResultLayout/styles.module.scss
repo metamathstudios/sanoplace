@@ -1,0 +1,50 @@
+.screenContainer {
+  width: 100%;
+  border: solid transparent;
+  .container {
+    width: 85%;
+    margin-top: 10vh;
+    margin-left: 15vw;
+    font-family: Poppins, sans-serif;
+
+    .titleContainer {
+      display: flex;
+      justify-content: center;
+      color: var(--blue);
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .dependencyContainer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .textLevel {
+      display: flex;
+      justify-content: center;
+      color: var(--green);
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+
+    .nextButtonContainer {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .nextButton {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        padding: 10px 0px 10px 0px;
+        background-color: var(--blue);
+        border-radius: 30px;
+        color: white;
+      }
+    }
+  }
+}
