@@ -4,120 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  .form {
-    width: 500px;
-    height: 440px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    flex-direction: column;
+  .wave {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: rgb(125, 186, 88);
+    background: linear-gradient(
+      0deg,
+      rgba(125, 186, 88, 1) 2%,
+      transparent 13%
+    );
 
-    .logo {
-      width: 200px;
-      height: 31px;
-      margin-bottom: 60px;
-    }
-
-    .input {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
-      .inputIcon {
-        background-color: var(--sl-grey);
-        width: 60px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-      }
-
-      input {
-        width: 280px;
-        height: 45px;
-        border: 0.5px var(--sl-grey) solid;
-        outline: none;
-        padding: 0 12px;
-        color: var(--grey);
-        transition: 0.3s ease-in-out;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        font-family: "Poppins", sans-serif;
-      }
-
-      input::placeholder {
-        color: var(--ml-grey);
-        font-size: 15px;
-        font-family: "Poppins", sans-serif;
-      }
-    }
-
-    .wrapper {
-      width: 320px;
-      margin-top: 30px;
-
-      .formExtra {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 14px;
-        font-weight: 500;
-        font-family: "Poppins", sans-serif;
-
-        span {
-          cursor: pointer;
-        }
-
-        button {
-          width: 90px;
-          height: 40px;
-          outline: none;
-          border: 0;
-          padding: 0 20px;
-          color: var(--white);
-          background: var(--blue);
-          transition: 0.3s ease-in-out;
-          border-radius: 10px;
-          cursor: pointer;
-          font-family: "Poppins", sans-serif;
-        }
-      }
-
-      .formCreateAccount {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin-top: 40px;
-        font-size: 14px;
-        font-weight: 500;
-        font-family: "Poppins", sans-serif;
-
-        span {
-          color: var(--blue);
-          font-weight: 600;
-          cursor: pointer;
-        }
-      }
-
-      .divisorContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-
-        .divisor {
-          width: 280px;
-          height: 1px;
-          background-color: var(--ml-grey);
-        }
-      }
+    img {
+      width: 100%;
     }
   }
 }

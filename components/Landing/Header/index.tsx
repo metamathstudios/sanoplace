@@ -74,7 +74,13 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.left}>
-        <Image src="/logo.svg" width={224} height={35} alt="Nicometa Logo" />
+        <Image
+          src="/logo.svg"
+          width={224}
+          height={35}
+          alt="Nicometa Logo"
+          className={styles.logo}
+        />
       </div>
       <div className={styles.middle}>
         <ul>

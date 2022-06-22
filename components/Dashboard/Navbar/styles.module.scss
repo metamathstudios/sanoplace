@@ -6,13 +6,17 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  -webkit-box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 15px -1px rgba(0, 0, 0, 0.15);
 
   .wrapper {
     width: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .logo {
+      cursor: pointer;
+    }
   }
 }
