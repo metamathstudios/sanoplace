@@ -14,11 +14,13 @@
     align-items: center;
     border-radius: 30px;
     flex-direction: column;
+    z-index: 2;
 
     .logo {
       width: 200px;
       height: 31px;
       margin-bottom: 60px;
+      cursor: pointer;
     }
 
     .input {
@@ -74,18 +76,20 @@
           cursor: pointer;
         }
 
-        button {
+        .button {
           width: 90px;
           height: 40px;
           outline: none;
           border: 0;
-          padding: 0 20px;
           color: var(--white);
           background: var(--blue);
           transition: 0.3s ease-in-out;
           border-radius: 10px;
           cursor: pointer;
           font-family: "Poppins", sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -118,6 +122,22 @@
           background-color: var(--ml-grey);
         }
       }
+    }
+  }
+
+  .wave {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: rgb(125, 186, 88);
+    background: linear-gradient(
+      0deg,
+      rgba(125, 186, 88, 1) 2%,
+      transparent 13%
+    );
+
+    img {
+      width: 100%;
     }
   }
 }
