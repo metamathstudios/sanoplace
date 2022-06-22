@@ -1,5 +1,6 @@
-import Select from "./components/SelectComponent";
 import styles from "./styles.module.scss";
+
+import SelectForm from './components/SelectFormComponent/index'
 
 const FarForm = () => {
   return (
@@ -15,12 +16,7 @@ const FarForm = () => {
         voltarem a fumar.
         </div>
         <div className={styles.selectContainer}>
-          <Select text = 'Em quanto tempo depois de acordar você fuma o primeiro cigarro?' />
-          <Select text = 'Você acha difícil ficar sem fumar em lugares onde é proibido (por exemplo, na igreja, no cinema, em bibliotecas, e outros.)?' />
-          <Select text = 'Qual o cigarro do dia que traz mais satisfação?' />
-          <Select text = 'Quantos cigarros você fuma por dia?' />
-          <Select text = 'Você fuma mais frequentemente pela manhã?' />
-          <Select text = 'Você fuma mesmo doente quando precisa ficar na cama a maior parte do tempo?' />
+          <SelectForm />
         </div>
         <div className={styles.nextButtonContainer}>
           <div className={styles.nextButton}>

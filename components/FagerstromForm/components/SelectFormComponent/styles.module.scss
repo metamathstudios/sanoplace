@@ -1,0 +1,35 @@
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  .contentContainer1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .textContainer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    .selectContainer {
+      padding-right: 20px;
+    }
+  }
+
+  .line {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    height: 0.1vh;
+    background-color: var(--green);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
