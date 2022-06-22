@@ -1,0 +1,108 @@
+.container {
+  width: 15%;
+  height: 90vh;
+  background-color: var(--green);
+  position: fixed;
+  bottom: 0;
+
+  .profile {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    .name {
+      font-size: 1.2rem;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 20px;
+    }
+
+    .role {
+      font-size: 0.9rem;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .menu {
+      width: 165px;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      .house {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .mail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .notification {
+          width: 10px;
+          height: 10px;
+          background-color: red;
+          position: absolute;
+          margin-bottom: 20px;
+          margin-left: 25px;
+          border-radius: 100%;
+        }
+      }
+
+      .settings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .board {
+    .item {
+      padding: 14px 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+
+      span {
+        padding-left: 15px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: var(--white);
+      }
+    }
+
+    .item:first-child {
+      background-color: var(--white);
+
+      span {
+        color: var(--green);
+      }
+
+      img {
+        color: var(--green);
+        filter: invert(32%) sepia(61%) saturate(371%) hue-rotate(54deg)
+          brightness(89%) contrast(82%);
+      }
+    }
+  }
+}
