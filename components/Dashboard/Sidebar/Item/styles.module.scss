@@ -1,0 +1,32 @@
+.item {
+  transition: all 0.3s ease-in-out;
+
+  .itemContent {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    .icon {
+      width: 20%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      width: 70%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      span {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: var(--white);
+        font-size: 14px;
+      }
+    }
+  }
+}

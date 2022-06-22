@@ -1,16 +1,19 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import AuthOption from "./AuthOption";
 import styles from "./styles.module.scss";
+import Doctor from "./types/doctor";
+import Patient from "./types/patient";
 
-const AuthSelection = (props: any) => {
+const Registration = (props: any) => {
   const router = useRouter();
 
   return (
     <div
       className={styles.container}
       style={
-        props.pageType == "auth" ? { display: "flex" } : { display: "none" }
+        props.pageType == "registration"
+          ? { display: "flex" }
+          : { display: "none" }
       }
     >
       <div className={styles.title}>
@@ -27,7 +30,7 @@ const AuthSelection = (props: any) => {
               cursor: "pointer",
             }}
             onClick={() => {
-              props.setPageType("role");
+              props.setPageType("auth");
               props.setSignUpData({});
             }}
           />
@@ -40,24 +43,16 @@ const AuthSelection = (props: any) => {
         </span>
         <div className={styles.separator} />
       </div>
-      <div>
-        <div
-          onClick={() => {
-            props.setPageType("registration");
-          }}
-        >
-          <AuthOption label="Email" />
+      <form className={styles.form}>
+        {props.signUpData.role === "patient" ? <Patient /> : <Doctor />}
+        <div className={styles.terms}>
+          <span>
+            <input type="checkbox" name="" id="" /> Termos de Uso e
+            <span className={styles.contrast}> Política de Privacidade</span>
+          </span>
         </div>
-        <div>
-          <AuthOption label="Google" />
-        </div>
-        <div>
-          <AuthOption label="Facebook" />
-        </div>
-        <div>
-          <AuthOption label="Apple" />
-        </div>
-      </div>
+        <div className={styles.button}>INSCREVA-SE</div>
+      </form>
       <div className={styles.footer}>
         <Image
           src="/logo.svg"
@@ -90,4 +85,4 @@ const AuthSelection = (props: any) => {
   );
 };
 
-export default AuthSelection;
+export default Registration;
