@@ -6,7 +6,7 @@ import SelectRadix from './components/SelectRadixComponent'
 const SelectForm = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Em quanto tempo depois de acordar você fuma o primeiro cigarro?' />
         </div>
@@ -17,7 +17,7 @@ const SelectForm = () => {
 
       <div className={styles.line} />
 
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Você acha difícil ficar sem fumar em lugares onde é proibido (por exemplo, na igreja, no cinema, em bibliotecas, e outros.)?' />
         </div>
@@ -28,7 +28,7 @@ const SelectForm = () => {
 
       <div className={styles.line} />
 
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Qual o cigarro do dia que traz mais satisfação?' />
         </div>
@@ -39,7 +39,7 @@ const SelectForm = () => {
 
       <div className={styles.line} />
 
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Quantos cigarros você fuma por dia?' />
         </div>
@@ -50,7 +50,7 @@ const SelectForm = () => {
 
       <div className={styles.line} />
 
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Você fuma mais frequentemente pela manhã?' />
         </div>
@@ -61,7 +61,7 @@ const SelectForm = () => {
 
       <div className={styles.line} />
 
-      <div className={styles.contentContainer1}>
+      <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <TextSelectComponent text='Você fuma mesmo doente quando precisa ficar na cama a maior parte do tempo?' />
         </div>

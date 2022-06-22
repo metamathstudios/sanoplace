@@ -1,0 +1,50 @@
+.container {
+  width: 100px;
+
+  .yesNoContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .selectContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    .activeYesButton {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: var(--green);
+      border: solid 2px var(--green);
+      border-radius: 50px;
+    }
+
+    .disableYesButton {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border: solid 2px var(--green);
+      border-radius: 50px;
+    }
+
+    .activeNoButton {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: var(--green);
+      border: solid 2px var(--green);
+      border-radius: 50px;
+    }
+
+    .disableNoButton {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border: solid 2px var(--green);
+      border-radius: 50px;
+    }
+  }
+}

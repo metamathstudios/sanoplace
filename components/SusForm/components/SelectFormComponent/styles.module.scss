@@ -1,18 +1,24 @@
 .container {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding-top: 20px;
 
   .contentContainer {
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+    justify-content: space-between;
+
     .textContainer {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    .selectContainer {
+      padding-right: 20px;
     }
   }
 
@@ -23,5 +29,7 @@
     margin-top: 20px;
     height: 0.1vh;
     background-color: var(--green);
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

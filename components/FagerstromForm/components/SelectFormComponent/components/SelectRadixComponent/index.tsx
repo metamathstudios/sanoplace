@@ -118,7 +118,6 @@ export const SelectScrollDownButton = StyledScrollDownButton;
 const Box = styled('div', {});
 
 export const SelectRadix = (props: any) => {
-  console.log(props.value3)
   return (
   <Box>
     <Select defaultValue={props.value1}>
