@@ -21,9 +21,6 @@ const AuthSelection = (props: any) => {
             width={20}
             height={20}
             style={{
-              transform: "rotate(180deg)",
-              filter:
-                "invert(59%) sepia(29%) saturate(1906%) hue-rotate(169deg) brightness(89%) contrast(92%);",
               cursor: "pointer",
             }}
             onClick={() => {

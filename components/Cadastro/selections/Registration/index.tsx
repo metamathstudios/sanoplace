@@ -24,9 +24,6 @@ const Registration = (props: any) => {
             width={20}
             height={20}
             style={{
-              transform: "rotate(180deg)",
-              filter:
-                "invert(59%) sepia(29%) saturate(1906%) hue-rotate(169deg) brightness(89%) contrast(92%);",
               cursor: "pointer",
             }}
             onClick={() => {
@@ -43,16 +40,7 @@ const Registration = (props: any) => {
         </span>
         <div className={styles.separator} />
       </div>
-      <form className={styles.form}>
-        {props.signUpData.role === "patient" ? <Patient /> : <Doctor />}
-        <div className={styles.terms}>
-          <span>
-            <input type="checkbox" name="" id="" /> Termos de Uso e
-            <span className={styles.contrast}> Política de Privacidade</span>
-          </span>
-        </div>
-        <div className={styles.button}>INSCREVA-SE</div>
-      </form>
+      {props.signUpData.role === "patient" ? <Patient /> : <Doctor />}
       <div className={styles.footer}>
         <Image
           src="/logo.svg"
