@@ -1,0 +1,83 @@
+.container {
+  background-image: linear-gradient(-150deg, rgba(41, 161, 220, 1), rgba(125, 186, 88, 1));
+
+  .heroContainer {
+    font-family: Poppins, sans-serif;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: 120px;
+
+    .leftSide {
+      width: 40%;
+      padding-left: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      .title {
+        font-size: 58px;
+        font-weight: bold;
+      }
+
+      .subTitle {
+        font-size: 49px;
+        padding-top: 10px;
+      }
+      
+      .description {
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+
+      .button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        padding: 20px;
+        background-color: var(--blue);
+        border-radius: 10px;
+      }
+    }
+
+    .rightSide {
+      width: 60%;
+      background-image: url('./assets/headWoman.svg');
+      background-size: 1100px;
+
+      @media screen and (min-width: 1400px) {
+        background-size: 1410px;
+      }
+
+      @media screen and (min-width: 2000px) {
+        background-size: 1600px;
+      }
+    }
+  }
+
+  .positionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    padding-bottom: 20px;
+
+    .ctaContainer {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      height: 12vh;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 40px black;
+      
+      .centerContainer {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

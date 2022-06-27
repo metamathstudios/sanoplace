@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../components/Landing/Footer";
 import Header from "../components/Landing/Header";
-import Main from "../components/Landing/Main";
-import Soluctions from "../components/Landing/Soluctions";
+import Hero from "../components/Landing/Hero";
+import Stats from "../components/Landing/Stats";
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Main />
-      <Soluctions />
+      <Hero />
+      <Stats />
+      <Footer />
     </>
   );
 };
