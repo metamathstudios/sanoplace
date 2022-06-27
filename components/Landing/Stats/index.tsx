@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
 
 const Stats = () => {
+  
   return (
     <div className={styles.container}>
       <div className={styles.lineContainer}>

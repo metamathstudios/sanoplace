@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Footer from "../components/Landing/Footer";
-import Header from "../components/Landing/Header";
-import Hero from "../components/Landing/Hero";
-import Stats from "../components/Landing/Stats";
+
+import Header from "../components/Landing/Header"
+import Hero from "../components/Landing/Hero"
+import Stats from "../components/Landing/Stats"
+import Apresentation1 from "../components/Landing/Apresentation1/indes"
+import Footer from "../components/Landing/Footer"
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <Hero />
       <Stats />
+      <Apresentation1 />
       <Footer />
     </>
   );
