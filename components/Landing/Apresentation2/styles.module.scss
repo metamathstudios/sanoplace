@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  font-family: Poppins, sans-serif;
+
+  .centerContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    .leftSide {
+      width: 60%;
+      margin-top: 100px;
+    }
+
+    .rightSide {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+
+      .description {
+        font-size: 20px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+}

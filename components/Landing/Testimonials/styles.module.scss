@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F2F8EE;
+  font-family: Poppins, sans-serif;
+
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .headerText {
+      padding-top: 120px;
+
+      .title {
+        font-size: 18px;
+      }
+
+      .secondTitle {
+        color: var(--blue);
+        font-size: 45px;
+      }
+
+      .description {
+        font-size: 18px;
+      }
+    }
+
+    .boxesContainer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 50px;
+    }
+  }
+}

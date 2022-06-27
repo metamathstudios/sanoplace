@@ -4,7 +4,10 @@ import Head from "next/head";
 import Header from "../components/Landing/Header"
 import Hero from "../components/Landing/Hero"
 import Stats from "../components/Landing/Stats"
-import Apresentation1 from "../components/Landing/Apresentation1/indes"
+import Apresentation1 from "../components/Landing/Apresentation1"
+import Testimonials from "../components/Landing/Testimonials"
+import Apresentation2 from "../components/Landing/Apresentation2";
+import FAQ from "../components/Landing/FAQ";
 import Footer from "../components/Landing/Footer"
 
 const Home: NextPage = () => {
@@ -19,6 +22,9 @@ const Home: NextPage = () => {
       <Hero />
       <Stats />
       <Apresentation1 />
+      <Testimonials />
+      <Apresentation2 />
+      <FAQ />
       <Footer />
     </>
   );

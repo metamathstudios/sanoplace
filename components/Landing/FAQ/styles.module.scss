@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+
+
+  .columnContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    .titleContainer {
+      color: var(--green);
+      font-size: 40px;
+      font-weight: bold;
+      padding-bottom: 60px;
+    }
+
+    .boxesContainer {
+      width: 100%;
+
+      .box {
+        cursor: pointer;
+        width: 100%;
+        background-color: var(--green);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 30px;
+        color: white;
+        font-size: 20px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

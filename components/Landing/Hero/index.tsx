@@ -24,10 +24,10 @@ const Hero = () => {
         </div>
         <div className={styles.rightSide} />
       </div>
-      <div className={styles.positionContainer}>
+      {/* <div className={styles.positionContainer}>
         <div className={styles.ctaContainer}>
           <div className={styles.centerContainer}>
-            <div className={styles.improveHealth}>
+             <div className={styles.improveHealth}>
               <Image src={diagnostic} alt='Diagnostic' width={100} />
               <div className={styles.title}>
                 Melhore sua saúde
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+  </div> */}
     </div>
   )
 }
