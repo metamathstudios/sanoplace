@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className={styles.rightSide} />
       </div>
-      {/* <div className={styles.positionContainer}>
+  {/* <div className={styles.positionContainer}>
         <div className={styles.ctaContainer}>
           <div className={styles.centerContainer}>
              <div className={styles.improveHealth}>
@@ -38,7 +38,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-  </div> */}
+      </div> */}
     </div>
   )
 }

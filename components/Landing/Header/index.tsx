@@ -9,13 +9,15 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.left}>
-        <Image
-          src="/logo.svg"
-          width={224}
-          height={35}
-          alt="Nicometa Logo"
-          className={styles.logo}
-        />
+        <div className={styles.logo}>
+          <Image
+            src="/logo.svg"
+            width={184}
+            height={35}
+            layout="fixed"
+            alt="Nicometa Logo"
+          />
+        </div>
 
       <div className={styles.userOptions}>
         <div className={styles.optionsContainer}>
