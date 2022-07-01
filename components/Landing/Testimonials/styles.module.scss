@@ -6,6 +6,10 @@
   background-color: #F2F8EE;
   font-family: Poppins, sans-serif;
 
+  @media screen and (max-width: 1400px) {
+    height: 130vh;
+  }
+
   .columnContainer {
     display: flex;
     flex-direction: column;

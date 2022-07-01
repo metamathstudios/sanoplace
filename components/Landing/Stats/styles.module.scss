@@ -5,6 +5,10 @@
   flex-direction: column;
   font-family: Poppins, sans-serif;
 
+  @media screen and (max-width: 1400px) {
+    height: 100vh;
+  }
+
   .lineContainer {
     display: flex;
     justify-content: center;

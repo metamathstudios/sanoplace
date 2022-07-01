@@ -5,13 +5,21 @@
   height: 90vh;
   font-family: Poppins, sans-serif;
 
+  @media screen and (max-width: 1400px) {
+    height: 100vh;
+  }
+
   .centerContainer {
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     .leftSide {
       width: 60%;
+
+      @media screen and (max-width: 1400px) {
+        width: 50%;
+      }
     }
 
     .rightSide {
