@@ -8,8 +8,8 @@ import person from './assets/person.svg'
 import specialist from './assets/specialist.svg'
 import business from './assets/business.svg'
 
-import styles from "./styles.module.scss";
-import Card from "./components/Card/Card";
+import styles from "./styles.module.scss"
+import Card from "./components/Card/Card"
 
 const Header = () => {
   const router = useRouter();
