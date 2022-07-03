@@ -7,6 +7,7 @@ import close from './assets/close.svg'
 import person from './assets/person.svg'
 import specialist from './assets/specialist.svg'
 import business from './assets/business.svg'
+import mobileMenuSVG from './assets/mobileMenu.svg'
 
 import styles from "./styles.module.scss"
 import Card from "./components/Card/Card"
@@ -15,10 +16,47 @@ const Header = () => {
   const router = useRouter();
 
   const [accountModal, setAccountModal] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <header className={styles.container}>
       <div className={styles.left}>
+        <div className={styles.mobileMenu} onClick={() => setMobileMenu(!mobileMenu)}>
+          <Image src={mobileMenuSVG} alt='Menu' />
+        </div>
+        { mobileMenu === true ?
+        <div className={styles.mobileMenuContainer}>
+          <div className={styles.contentContainer}>
+            <div className={styles.menuOptionsContainer}>
+              <div className={styles.specialists}>
+                Para Especialistas
+              </div>
+              <div className={styles.business}>
+                Para Empresas
+              </div>
+              <div className={styles.searchSpecialists}>
+                Busque Especialistas
+              </div>
+              <div className={styles.menuLoginButton}>
+                Entrar
+              </div>
+              <div className={styles.signUpButton}>
+                Crie Sua Conta
+              </div>
+              <div className={styles.rowLegalContainer}>
+                <div className={styles.politics}>
+                  Política de Privacidade
+                </div>
+                <div className={styles.serviceTerms}>
+                  Termos de Serviço
+                </div>
+              </div>
+              <div className={styles.menuFooter}>
+                © 2022 SanoPlace 
+              </div>
+            </div>
+          </div>
+        </div> : null}
         <div className={styles.logo}>
           <Image
             src="/logo.svg"
