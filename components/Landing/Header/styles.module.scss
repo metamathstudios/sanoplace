@@ -90,5 +90,51 @@
       font-family: "Poppins", sans-serif;
       font-weight: 500;
     }
+
+    .modalContainer {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+    .accountModal {
+      position: absolute;
+      top: 90%;
+      left: 20%;
+      width: 60vw;
+      height: 60vh;
+      background-color: white;
+      border-radius: 10px;
+      text-align: center;
+
+      .closeContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 15px;
+
+        .closeSvg {
+          cursor: pointer;
+        }
+      }
+
+      .modalTitle {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+
+      .cardContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      .hideAccountModal {
+        display: none;
+      }
+    } 
   }
 }
