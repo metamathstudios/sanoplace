@@ -1,7 +1,14 @@
+import { useState } from 'react'
 import styles from './styles.module.scss'
 
+import CountUp from 'react-countup';
+
 const Stats = () => {
-  
+  const [valueTotal] = useState(80)
+  const [value2Total] = useState(100)
+  const [value3Total] = useState(97)
+  const [value4Total] = useState(700)
+
   return (
     <div className={styles.container}>
       <div className={styles.lineContainer}>
@@ -16,20 +23,20 @@ const Stats = () => {
       <div className={styles.subTitle}>
         Nossos números não param de crescer!
       </div>
-      <div className={styles.centerContainer}>
+      <div className={styles.centerContainer} >
         <div className={styles.boxContainer}>
           <div className={styles.box}>
             <div className={styles.number}>
-              80%
+              <CountUp start={0} end={valueTotal} duration={2} suffix='+' enableScrollSpy={true}/>
             </div>
             <div className={styles.boxSubTitle}>
-              Escolhem NicoMeta
+              Escolhem SanoPlace
             </div>
           </div>
 
           <div className={styles.box}>
             <div className={styles.number}>
-              +100
+              <CountUp start={0} end={value2Total} duration={2.3} prefix='+' enableScrollSpy={true}/>
             </div>
             <div className={styles.boxSubTitle}>
               Especialistas
@@ -38,7 +45,7 @@ const Stats = () => {
 
           <div className={styles.box}>
             <div className={styles.number}>
-              97%
+            <CountUp start={0} end={value3Total} duration={2.6} suffix='%' enableScrollSpy={true}/>
             </div>
             <div className={styles.boxSubTitle}>
               Mudaram de Vida
@@ -47,7 +54,7 @@ const Stats = () => {
 
           <div className={styles.box}>
             <div className={styles.number}>
-              +700
+              {<CountUp start={0} end={value4Total} duration={3} suffix='+' enableScrollSpy={true}/>}
             </div>
             <div className={styles.boxSubTitle}>
               Clientes Ativos

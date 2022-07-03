@@ -1,6 +1,11 @@
+import { useState } from 'react'
+
 import styles from './styles.module.scss'
 
 const FAQ = () => {
+
+  const [open, setOpen] = useState(false)
+
   return (
     <div className={styles.container}>
       <div className={styles.columnContainer}>
@@ -8,22 +13,7 @@ const FAQ = () => {
           Perguntas Frequentes
         </div>
         <div className={styles.boxesContainer}>
-          <div className={styles.box}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div className={styles.box}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div className={styles.box}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div className={styles.box}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div className={styles.box}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div className={styles.box}>
+          <div className={styles.box} onClick={() => setOpen(true)}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit?
           </div>
         </div>

@@ -65,7 +65,7 @@ const Footer = () => {
       <div className={styles.line}/>
       <div className={styles.footerEnd}>
         <div className={styles.text}>
-          Nicometa - CNPJ: 00.000.000/0000-00 - em breve<br />
+          SanoPlace - CNPJ: 00.000.000/0000-00 - em breve<br />
           <br />
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an <br />
           unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic <br />
@@ -73,7 +73,7 @@ const Footer = () => {
           with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
         <div className={styles.info}>
-          <div>@2022 NicoMeta</div>
+          <div>@2022 SanoPlace</div>
           <div>Termos de Serviço</div>
           <div>Política de Privacidade</div>
         </div>
