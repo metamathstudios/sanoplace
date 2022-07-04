@@ -7,6 +7,7 @@
   padding-bottom: 50px;
   background-color: var(--footer-grey);
   font-family: Poppins, sans-serif;
+  
 
   @media screen and (max-width: 1400px) {
     height: 120vh;
@@ -29,6 +30,7 @@
   .footerMain {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 40px;
     
     .column {
@@ -58,16 +60,23 @@
   }
 
   .footerEnd {
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
     
     .info {
       display: flex;
       padding-top: 40px;
+      flex-direction: column;
 
       div {
         margin-right: 20px;
         color: #505050;
         text-decoration: underline;
+
+        @media screen and (max-width(750px)) {
+          margin-right: 0px;
+        }
       }
     }
   }

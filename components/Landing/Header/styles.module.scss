@@ -12,6 +12,10 @@
   background-color: white;
   z-index: 9999;
 
+  @media screen and (max-width: 950px) {
+    height: 80px;
+  }
+
   .left {
     width: 33.3%;
     display: flex;
