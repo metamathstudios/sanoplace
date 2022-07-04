@@ -5,8 +5,9 @@
   flex-direction: column;
   font-family: Poppins, sans-serif;
 
-  @media screen and (max-width: 1400px) {
-    height: 100vh;
+  @media screen and (max-width: 1260px) {
+    height: auto;
+    padding-bottom: 50px;
   }
 
   .lineContainer {
@@ -27,6 +28,10 @@
     margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
+
+    @media screen and (max-width: 500px) {
+      font-size: 17px;
+    }
   }
 
   .title {
@@ -34,6 +39,10 @@
     font-weight: bold;
     color: var(--green);
     text-align: center;
+
+    @media screen and (max-width: 500px) {
+      font-size: 25px;
+    }
   }
 
   .centerContainer {
@@ -42,23 +51,35 @@
     justify-content: center;
     margin-top: 80px;
 
+    @media screen and (max-width: 1260px) {
+      margin-top: 30px;
+    }
+
     .boxContainer {
       width: 80%;
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
 
       .box {
         width: 20%;
         padding: 40px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         border-radius: 20px;
+        font-size: 50px;
+
+        @media screen and (max-width: 1260px) {
+          width: 100%;
+          padding: 20px;
+          font-size: 30px;
+          margin-top: 20px;
+        }
 
         .number {
           text-align: center;
-          font-size: 50px;
           font-weight: bold;
           background: -webkit-linear-gradient(rgba(134, 192, 100, 1), rgba(41, 161, 220, 1));
-          -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
         }
 
@@ -67,8 +88,12 @@
           font-size: 20px;
           font-weight: bold;
           background: -webkit-linear-gradient(rgba(134, 192, 100, 1), rgba(41, 161, 220, 1));
-          -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
+
+          @media screen and (max-width: 500px) {
+            font-size: 20px;       
+          }
         }
       }
     }

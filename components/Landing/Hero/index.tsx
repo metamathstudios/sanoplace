@@ -18,8 +18,10 @@ const Hero = () => {
           <div className={styles.description}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
           </div>
-          <div className={styles.button}>
-            Agende uma conversa agora
+          <div className={styles.buttonContainer}>
+            <div className={styles.button}>
+              Agende uma conversa agora
+            </div>
           </div>
         </div>
         <div className={styles.rightSide} />

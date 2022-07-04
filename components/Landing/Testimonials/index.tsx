@@ -26,7 +26,7 @@ const Testimonials = (props: any) => {
           <div className={styles.description}>
             Depoimento de clientes reais que tiveram <br />
             processos bem sucedidos por meio das <br />
-            soluções da nicometa.
+            soluções da SanoPlace.
           </div>
         </div>
         <div className={styles.boxesContainer}>
