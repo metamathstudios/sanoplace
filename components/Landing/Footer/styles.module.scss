@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: 80vh;
   padding-top: 50px;
   padding-right: 120px;
   padding-left: 120px;
@@ -8,9 +7,9 @@
   background-color: var(--footer-grey);
   font-family: Poppins, sans-serif;
   
-
-  @media screen and (max-width: 1400px) {
-    height: 120vh;
+  @media screen and (max-width: 1080px) {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .footerHeader {
@@ -20,6 +19,13 @@
     .logoContainer {
       padding-left: 10px;
       padding-right: 10px;
+
+      @media screen and (max-width: 1080px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+      }
     }
 
     .line {
@@ -61,13 +67,18 @@
 
   .footerEnd {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-top: 20px;
+
+    @media screen and (max-width: 1080px) {
+      padding-left: 20px;
+      padding-right: 10px;
+    }
     
     .info {
       display: flex;
       padding-top: 40px;
-      flex-direction: column;
 
       div {
         margin-right: 20px;

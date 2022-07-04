@@ -1,10 +1,15 @@
 .box {
   padding: 20px;
+  margin-bottom: 30px;
   margin-left: 30px;
   margin-right: 30px;
   background-color: white;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
   
   .profile {
     padding-bottom: 10px;
