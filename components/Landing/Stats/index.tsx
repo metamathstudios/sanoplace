@@ -1,7 +1,11 @@
 import { useState } from 'react'
+import Image from 'next/image';
+import CountUp from 'react-countup';
+
 import styles from './styles.module.scss'
 
-import CountUp from 'react-countup';
+import diagnostic from './assets/diagnostic.svg'
+import calendar from './assets/calendar.svg'
 
 const Stats = () => {
   const [valueTotal] = useState(80)
@@ -10,6 +14,43 @@ const Stats = () => {
   const [value4Total] = useState(700)
 
   return (
+    <>
+    <div className={styles.afterDivContainer}>
+      <div className={styles.afterDiv}>
+        <div className={styles.centerColumn}>
+          <div className={styles.firstRow}>
+            <div className={styles.diagnosticImage}>
+              <Image src={diagnostic} alt='Melhore sua Saúde' />
+            </div>
+            <div className={styles.columnContainer}>
+              <div className={styles.title}>
+                Melhore sua saúde
+              </div>
+              <div className={styles.subtitle}>
+                Doutores altamente classificados.
+              </div>
+            </div>
+            <div className={styles.line} />
+            <div className={styles.firstRow}>
+              <div className={styles.diagnosticImage}>
+                <Image src={calendar} alt='Melhore sua Saúde' />
+              </div>
+              <div className={styles.columnContainer}>
+                <div className={styles.title}>
+                  Agendamento em instantes
+                </div>
+                <div className={styles.subtitle}>
+                  Plataforma com a melhor qualidade.
+                </div>
+              </div>
+            </div>
+            <div className={styles.button}>
+              Fale com um Especialista
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div className={styles.container}>
       <div className={styles.lineContainer}>
         <div className={styles.line} />
@@ -63,6 +104,7 @@ const Stats = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
