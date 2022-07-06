@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 import Image from 'next/image'
 
-import logo from '../../../public/images/landing/logo.svg'
+import logo from '../../public/images/landing/logo.svg'
 
 const Footer = () => {
   return (

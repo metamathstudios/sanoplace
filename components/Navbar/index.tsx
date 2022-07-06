@@ -12,7 +12,7 @@ import mobileMenuSVG from './assets/mobileMenu.svg'
 import styles from "./styles.module.scss"
 import Card from "./components/Card/Card"
 
-const Header = () => {
+const Navbar = () => {
   const router = useRouter();
 
   const [accountModal, setAccountModal] = useState(false)
@@ -105,4 +105,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar
