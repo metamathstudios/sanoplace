@@ -17,7 +17,7 @@ const Stats = () => {
     <>
     <div className={styles.afterDivContainer}>
       <div className={styles.afterDiv}>
-        <div className={styles.centerColumn}>
+        <div className={styles.centerRow}>
           <div className={styles.firstRow}>
             <div className={styles.diagnosticImage}>
               <Image src={diagnostic} alt='Melhore sua Saúde' />
@@ -30,22 +30,27 @@ const Stats = () => {
                 Doutores altamente classificados.
               </div>
             </div>
-            <div className={styles.line} />
-            <div className={styles.firstRow}>
-              <div className={styles.diagnosticImage}>
-                <Image src={calendar} alt='Melhore sua Saúde' />
-              </div>
-              <div className={styles.columnContainer}>
-                <div className={styles.title}>
+          </div>
+
+          <div className={styles.line} />
+
+          <div className={styles.secondRow}>
+            <div className={styles.diagnosticImage}>
+              <Image src={calendar} alt='Melhore sua Saúde' />
+            </div>
+            <div className={styles.columnContainer}>
+              <div className={styles.title}>
                   Agendamento em instantes
-                </div>
-                <div className={styles.subtitle}>
-                  Plataforma com a melhor qualidade.
-                </div>
+              </div>
+              <div className={styles.subtitle}>
+                Plataforma com a melhor qualidade.
               </div>
             </div>
+          </div>
+
+          <div className={styles.thirdRow}>
             <div className={styles.button}>
-              Fale com um Especialista
+                Fale com um Especialista
             </div>
           </div>
         </div>

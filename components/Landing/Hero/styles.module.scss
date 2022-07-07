@@ -1,143 +1,145 @@
 .container {
   background-image: linear-gradient(-150deg, rgba(41, 161, 220, 1), rgba(125, 186, 88, 1));
+  margin-top: 120px;
+
+  @media (max-width: 1050px) {
+    margin-top: 80px;
+  }
 
   .heroContainer {
+    height: 87vh;
+    display: grid;
+    grid-template-columns: 0.6fr 0.5fr;
     font-family: Poppins, sans-serif;
     color: white;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    margin-top: 80px;
+    align-items: center;
 
-    @media screen and (max-width: 1200px) {
+    @media (max-width: 1200px) {
       justify-content: center;
+      grid-template-columns: 1fr;
+      text-align: center;
     }
 
-    .leftSide {
-      width: 40%;
-      margin-left: 100px;
+    .leftSideContainer {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       
-      @media screen and (max-width: 720px) {
-        margin-top: -200px;
-      }
-
-      @media screen and (max-width: 1200px) {
-        width: 70%;
-        margin-left: 0px;
-      }
-      
-      .title {
-        font-size: 51px;
-        font-weight: bold;
-        
-        @media screen and (max-width: 600px) {
-          margin-top: 80px;
-          font-size: 26px;
-          text-align: center;
-        }
-
-        @media screen and (min-width: 1400px) {
-          font-size: 55px;
-        }
-      }
-
-      .subTitle {
-        font-size: 34px;
-        padding-top: 10px;
-
-        @media screen and (max-width: 600px) {
-          font-size: 22px;
-        }
-
-        @media screen and (min-width: 1400px) {
-          font-size: 35px;
-        }
-      }
-      
-      .description {
-        font-size: 25px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-
-        @media screen and (max-width: 600px) {
-          font-size: 18px;
-        }
-
-        @media screen and (min-width: 1400px) {
-          font-size: 20px;
-        }
-      }
-
-      .buttonContainer {
+      .leftSide {
+        margin-left: 40px;
         display: flex;
+        flex-direction: column;
 
-        @media screen and (max-width: 500px) {
-          justify-content: center;
+        @media (max-width: 1200px) {
+          margin-left: 0px;
         }
+        
+        .title {
+          font-size: 55px;
+          font-weight: bold;
 
-        .button {
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          width: 300px;
-          padding: 20px;
-          background-color: var(--blue);
-          border-radius: 10px;
-          margin-top: 40px;
-
-          @media screen and (max-width: 500px) {
-            width: 280px;
+          @media (max-width: 1280px) {
+            font-size: 50px;
           }
 
-          @media screen and (min-width: 1800px) {
-            width: 500px;
-            font-size: 22px;
+          @media (max-width: 830px) {
+            font-size: 43px;
+          }
+
+          @media (max-width: 700px) {
+            font-size: 40px;
+          }
+
+          @media (max-width: 530px) {
+            font-size: 30px;
+          }
+
+          @media (max-width: 460px) {
+            font-size: 23px;
+          }
+        }
+
+        .subTitle {
+          font-size: 55px;
+          padding-top: 10px;
+
+          @media (max-width: 1280px) {
+            font-size: 50px;
+          }
+
+          @media (max-width: 830px) {
+            font-size: 43px;
+          }
+
+          @media (max-width: 700px) {
+            font-size: 40px;
+          }
+
+          @media (max-width: 530px) {
+            font-size: 30px;
+          }
+
+          @media (max-width: 460px) {
+            font-size: 23px;
+          }
+        }
+        
+        .description {
+          font-size: 25px;
+          padding-top: 10px;
+          padding-bottom: 20px;
+
+          @media (max-width: 1280px) {
+            font-size: 20px;
+            padding-top: 40px;
+          }
+
+          @media (max-width: 830px) {
+            font-size: 17px;
+          }
+
+          @media (max-width: 700px) {
+            font-size: 15px;
+          }
+
+          @media (max-width: 530px) {
+            font-size: 15px;
+          }
+        }
+
+        .buttonContainer {
+          display: flex;
+
+          @media screen and (max-width: 1200px) {
+            justify-content: center;
+          }
+
+          .button {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            padding: 20px;
+            background-color: var(--blue);
+            border-radius: 20px;
+            margin-top: 40px;
+
+            @media screen and (max-width: 500px) {
+              width: 280px;
+            }
+
+            @media screen and (min-width: 1800px) {
+              width: 500px;
+              font-size: 22px;
+            }
           }
         }
       }
     }
 
     .rightSide {
-      width: 60%;
-      background-image: url('./assets/headWoman.svg');
-      background-size: 1100px;
 
       @media screen and (max-width: 1200px) {
         display: none;
-      }
-
-      @media screen and (min-width: 1400px) {
-        background-size: 1420px;
-      }
-
-      @media screen and (min-width: 2100px) {
-        background-size: 2000px;
-      }
-    }
-  }
-
-  .positionContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    padding-bottom: 20px;
-
-    .ctaContainer {
-      display: flex;
-      justify-content: center;
-      width: 80%;
-      height: 12vh;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 40px black;
-      
-      .centerContainer {
-        display: flex;
-        justify-content: center;
       }
     }
   }

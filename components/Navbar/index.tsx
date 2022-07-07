@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router"
 import { useState } from "react"
 
@@ -37,11 +38,15 @@ const Navbar = () => {
               <div className={styles.searchSpecialists}>
                 Busque Especialistas
               </div>
-              <div className={styles.menuLoginButton}>
-                Entrar
-              </div>
-              <div className={styles.signUpButton}>
-                Crie Sua Conta
+              <div className={styles.buttonsContainer}>
+                <div className={styles.columnButtons}>
+                  <div className={styles.menuLoginButton}>
+                    Entrar
+                  </div>
+                  <div className={styles.signUpButton}>
+                    Crie Sua Conta
+                  </div>
+                </div>
               </div>
               <div className={styles.rowLegalContainer}>
                 <div className={styles.politics}>
@@ -58,11 +63,10 @@ const Navbar = () => {
           </div>
         </div> : null}
         <div className={styles.logo}>
-          <Image
+          <img
             src="/logo.svg"
-            width={184}
+            width={204}
             height={35}
-            layout="fixed"
             alt="Nicometa Logo"
           />
         </div>
