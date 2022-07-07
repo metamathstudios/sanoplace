@@ -1,9 +1,5 @@
 .container {
   width: 100%;
-  padding-top: 50px;
-  padding-right: 120px;
-  padding-left: 120px;
-  padding-bottom: 50px;
   background-color: var(--footer-grey);
   font-family: Poppins, sans-serif;
   
@@ -12,81 +8,116 @@
     padding-right: 0px;
   }
 
-  .footerHeader {
+  .footerContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
-    .logoContainer {
-      padding-left: 10px;
-      padding-right: 10px;
+    .centerContainer {
+      width: 80%;
 
-      @media screen and (max-width: 1080px) {
-        padding-left: 0px;
-        padding-right: 0px;
-        display: flex;
-        justify-content: center;
-      }
-    }
+      .footerHeaderContainer {
+        .footerHeader {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
 
-    .line {
-      margin-top: 10px;
-      border: 1px solid var(--blue);
-    }
-  }
-  .footerMain {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    
-    .column {
-      padding-left: 20px;
-      padding-right: 20px;
+          .logoContainer {
 
-      .title {
-        font-weight: bold;
-        font-size: 18px;
-      }
+            @media screen and (max-width: 1080px) {
+              display: flex;
+              justify-content: center;
+            }
+          }
 
-      .content {
-        padding-top: 20px;
-
-        div {
-          cursor: pointer;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          text-decoration: underline;
+          .line {
+            margin-top: 10px;
+            border: 1px solid var(--blue);
+          }
         }
       }
-    }
-  }
-  .line {
-    margin-top: 40px;
-    border: 1px solid var(--blue);
-  }
+      .footerMain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        
+        .column {
+          
+          padding-right: 20px;
 
-  .footerEnd {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
+          .title {
+            font-weight: bold;
+            font-size: 18px;
+          }
 
-    @media screen and (max-width: 1080px) {
-      padding-left: 20px;
-      padding-right: 10px;
-    }
-    
-    .info {
-      display: flex;
-      padding-top: 40px;
+          .content {
+            padding-top: 20px;
 
-      div {
-        margin-right: 20px;
-        color: #505050;
-        text-decoration: underline;
+            div {
+              cursor: pointer;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .line {
+        margin-top: 40px;
+        border: 1px solid var(--blue);
+      }
 
-        @media screen and (max-width(750px)) {
-          margin-right: 0px;
+      .footerEnd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+
+        @media screen and (max-width: 1080px) {
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+
+        .infoContainer {
+          @media (max-width: 400px) {
+            display: flex;
+            justify-content: center;
+          }
+
+          .info {
+            display: flex;
+            padding-top: 40px;
+
+            @media (max-width: 400px) {
+              flex-direction: column;
+            }
+
+            div {
+              cursor: pointer;
+              margin-right: 20px;
+              color: #505050;
+              text-decoration: underline;
+
+              @media (max-width: 400px) {
+                margin-right: 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+              }
+            }
+
+            .sanoplace {
+              cursor: default;
+              color: #505050;
+              text-decoration: none;
+
+              @media screen and (max-width(750px)) {
+                
+              }
+            }
+          }
         }
       }
     }

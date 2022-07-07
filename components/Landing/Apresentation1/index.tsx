@@ -18,8 +18,10 @@ const Apresentation1 = () => {
           <div className={styles.description}>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
           </div>
-          <div className={styles.button}>
-            Entrar
+          <div className={styles.buttonContainer}>
+            <div className={styles.button}>
+              Entrar
+            </div>
           </div>
         </div>
       </div>

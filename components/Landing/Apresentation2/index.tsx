@@ -9,7 +9,7 @@ const Apresentation2 = () => {
     <div className={styles.container}>
       <div className={styles.centerContainer}>
         <div className={styles.leftSide}>
-          <Image src={layout} alt='Phone' width={600} />
+          <Image src={layout} alt='Layout' width={600} />
         </div>
         <div className={styles.rightSide}>
           <div className={styles.title}>
