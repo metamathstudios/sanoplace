@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #F2F8EE;
   font-family: Poppins, sans-serif;
-  margin-bottom: 50px;
+  padding-bottom: 60px;
 
   .columnContainer {
     display: flex;
@@ -29,10 +29,25 @@
     }
 
     .boxesContainer {
-      display: flex;
+      display: grid;
+      grid-template-areas: 'box box box box';
       justify-content: space-between;
-      flex-wrap: wrap;
-      padding-top: 50px;
+      margin-top: 50px;
+      gap: 30px;
+
+      @media (max-width: 1100px) {
+        grid-template-areas: 'box box';
+      }
+
+      @media (max-width: 620px) {
+        grid-template-areas: 'box';
+        margin-left: 10px;
+        justify-content: center;
+      }
+
+      @media (max-width: 500px) {
+        margin-left: 0px;
+      }
     }
   }
 }

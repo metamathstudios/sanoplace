@@ -1,0 +1,125 @@
+.container {
+  width: 100%;
+  background-color: var(--footer-grey);
+  font-family: Poppins, sans-serif;
+  
+  @media screen and (max-width: 1080px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .centerContainer {
+      width: 80%;
+
+      .footerHeaderContainer {
+        .footerHeader {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .logoContainer {
+
+            @media screen and (max-width: 1080px) {
+              display: flex;
+              justify-content: center;
+            }
+          }
+
+          .line {
+            margin-top: 10px;
+            border: 1px solid var(--blue);
+          }
+        }
+      }
+      .footerMain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        
+        .column {
+          
+          padding-right: 20px;
+
+          .title {
+            font-weight: bold;
+            font-size: 18px;
+          }
+
+          .content {
+            padding-top: 20px;
+
+            div {
+              cursor: pointer;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .line {
+        margin-top: 40px;
+        border: 1px solid var(--blue);
+      }
+
+      .footerEnd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+
+        @media screen and (max-width: 1080px) {
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+
+        .infoContainer {
+          @media (max-width: 400px) {
+            display: flex;
+            justify-content: center;
+          }
+
+          .info {
+            display: flex;
+            padding-top: 40px;
+
+            @media (max-width: 400px) {
+              flex-direction: column;
+            }
+
+            div {
+              cursor: pointer;
+              margin-right: 20px;
+              color: #505050;
+              text-decoration: underline;
+
+              @media (max-width: 400px) {
+                margin-right: 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+              }
+            }
+
+            .sanoplace {
+              cursor: default;
+              color: #505050;
+              text-decoration: none;
+
+              @media screen and (max-width(750px)) {
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

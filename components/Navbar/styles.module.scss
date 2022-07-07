@@ -2,8 +2,7 @@
   width: 100%;
   height: 120px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
   -webkit-box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.15);
   font-family: "Poppins", sans-serif;
@@ -12,28 +11,33 @@
   background-color: white;
   z-index: 9999;
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1050px) {
     height: 80px;
   }
 
   .left {
-    width: 33.3%;
+    width: 45%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 6%;
+    gap: 50px;
+    text-align: center;
 
-    @media screen and (max-width: 950px) {
+    @media (max-width: 1050px) {
       width: 100%;
-      justify-content: flex-start;
-      margin-left: 5%;
+      justify-content: center;
+      gap: 0px;
+    }
+
+    @media (max-width: 350px) {
+      margin-left: 40px;
     }
 
     .mobileMenu {
       cursor: pointer;
-      margin-right: 20px;
+      position: absolute;
+      left: 5%;
 
-      @media screen and (min-width: 950px) {
+      @media (min-width: 1050px) {
         display: none;
       }
     }
@@ -53,139 +57,142 @@
         justify-content: center;
 
         .menuOptionsContainer {
-          width: 100%;
+          width: 80%;
           display: flex;
           flex-direction: column;
           text-align: center;
+          gap: 20px;
 
           .specialists {
             cursor: pointer;
-            margin-top: 20px;
             color: var(--blue);
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: bold;
           }
 
           .business {
             cursor: pointer;
-            margin-top: 20px;
             color: var(--blue);
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: bold;
           }
 
           .searchSpecialists {
             cursor: pointer;
-            margin-top: 20px;
             color: var(--blue);
-            font-size: 20px;
+            font-size: 16px;
+            font-weight: bold;
           }
 
-          .menuLoginButton {
-            cursor: pointer;
-            text-align: center;
-            width: 80%;
-            margin: 30px 30px 0px 30px;
-            border: 1px solid var(--blue);
-            border-radius: 10px;
-            padding: 20px 0px 20px 0px;
-            font-size: 17px;
-            color: var(--blue);
-          }
+          .buttonsContainer {
+            display: flex;
+            justify-content: center;
 
-          .signUpButton {
-            cursor: pointer;
-            text-align: center;
-            width: 80%;
-            margin: 30px 30px 0px 30px;
-            background-color: var(--blue);
-            border-radius: 10px;
-            padding: 20px 0px 20px 0px;
-            font-size: 17px;
-            color: var(--white);
+            .columnButtons {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+
+              .menuLoginButton {
+                cursor: pointer;
+                width: 250px;
+                text-align: center;
+                border: 1px solid var(--blue);
+                border-radius: 10px;
+                padding: 15px 0px 15px 0px;
+                font-size: 14px;
+                color: var(--blue);
+                margin-top: 20px;
+              }
+
+              .signUpButton {
+                cursor: pointer;
+                width: 250px;
+                text-align: center;
+                background-color: var(--blue);
+                border-radius: 10px;
+                padding: 15px 0px 15px 0px;
+                font-size: 14px;
+                color: var(--white);
+              }
+            }
           }
 
           .rowLegalContainer {
             display: flex;
             justify-content: center;
-            margin-top: 40px;
-            font-size: 17px;
+            margin-top: 30px;
+            font-size: 10px;
             color: var(--blue);
 
             .politics {
-              margin-right: 50px;
+              cursor: pointer;
+              margin-right: 30px;
               text-decoration: underline;
             }
 
             .serviceTerms {
+              cursor: pointer;
               text-decoration: underline;
             }
           }
 
           .menuFooter {
-            margin-top: 30px;
+            margin-top: 0px;
             color: var(--blue);
-            font-size: 17px;
+            font-size: 10px;
           }
         }
       } 
     }
 
     .logo {
-      width: 300px;
       cursor: pointer;
-
-      @media screen and (max-width: 1250px) {
-        margin-left: 120px;
-      }
-
-      @media screen and (max-width: 950px) {
-        margin-left: 0px;
-
-      }
     }
 
     .userOptions {
       color: var(--blue);
+      width: auto;
 
       .optionsContainer {
         display: flex;
         flex-direction: row;
+        gap: 50px;
 
-        @media screen and (max-width: 950px) {
+        @media (max-width: 1050px) {
           display: none;
         }
 
         .paraEspecialistas {
-          width: 150px;
+          width: auto;
           cursor: pointer;
-          margin-right: 20px;
-          margin-left: 20px;
+          
         }
 
         .paraEmpresas {
-          width: 130px;
+          width: auto;
           cursor: pointer;
-          margin-right: 20px;
-          margin-left: 20px;
         }
       }
     }
   }
 
   .right {
-    width: 33.3%;
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 25px;
 
-    @media screen and (max-width: 950px) {
+    @media (max-width: 1050px) {
       display: none;
     }
 
     .specialists {
-      width: 220px;
-      color: var(--blue);
-      margin-right: 20px;
       cursor: pointer;
+      width: auto;
+      color: var(--blue);
+      text-align: center;
     }
 
     .loginButton {
@@ -196,7 +203,6 @@
       background-color: var(--white);
       border: 1px solid var(--blue);
       padding: 12px 0px;
-      margin-right: 20px;
       border-radius: 10px;
       cursor: pointer;
       font-family: "Poppins", sans-serif;
@@ -210,7 +216,6 @@
       color: var(--white);
       background-color: var(--blue);
       border: 0;
-      margin-right: 20px;
       padding: 12px 0px;
       border-radius: 10px;
       text-align: center;

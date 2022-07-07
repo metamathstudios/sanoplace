@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router"
 import { useState } from "react"
 
@@ -12,7 +13,7 @@ import mobileMenuSVG from './assets/mobileMenu.svg'
 import styles from "./styles.module.scss"
 import Card from "./components/Card/Card"
 
-const Header = () => {
+const Navbar = () => {
   const router = useRouter();
 
   const [accountModal, setAccountModal] = useState(false)
@@ -37,11 +38,15 @@ const Header = () => {
               <div className={styles.searchSpecialists}>
                 Busque Especialistas
               </div>
-              <div className={styles.menuLoginButton}>
-                Entrar
-              </div>
-              <div className={styles.signUpButton}>
-                Crie Sua Conta
+              <div className={styles.buttonsContainer}>
+                <div className={styles.columnButtons}>
+                  <div className={styles.menuLoginButton}>
+                    Entrar
+                  </div>
+                  <div className={styles.signUpButton}>
+                    Crie Sua Conta
+                  </div>
+                </div>
               </div>
               <div className={styles.rowLegalContainer}>
                 <div className={styles.politics}>
@@ -58,11 +63,10 @@ const Header = () => {
           </div>
         </div> : null}
         <div className={styles.logo}>
-          <Image
+          <img
             src="/logo.svg"
-            width={184}
+            width={204}
             height={35}
-            layout="fixed"
             alt="Nicometa Logo"
           />
         </div>
@@ -105,4 +109,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar
