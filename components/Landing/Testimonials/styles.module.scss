@@ -11,6 +11,10 @@
     flex-direction: column;
     text-align: center;
 
+    @media (max-width: 440px) {
+      width: 90%;
+    }
+
     .headerText {
       padding-top: 120px;
 
@@ -21,10 +25,18 @@
       .secondTitle {
         color: var(--blue);
         font-size: 45px;
+
+        @media (max-width: 440px) {
+          font-size: 35px;
+        }
       }
 
       .description {
         font-size: 18px;
+
+        @media (max-width: 440px) {
+          font-size: 15px;
+        }
       }
     }
 
