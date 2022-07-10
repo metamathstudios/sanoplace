@@ -143,7 +143,7 @@
             font-size: 10px;
           }
         }
-      } 
+      }
     }
 
     .logo {
@@ -166,7 +166,6 @@
         .paraEspecialistas {
           width: auto;
           cursor: pointer;
-          
         }
 
         .paraEmpresas {
@@ -231,43 +230,49 @@
       top: 0%;
       left: 0%;
       background-color: rgba(0, 0, 0, 0.25);
-    }
-    .accountModal {
-      position: absolute;
-      top: 90%;
-      left: 20%;
-      width: 60vw;
-      padding-bottom: 40px;
-      background-color: white;
-      border-radius: 10px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      .closeContainer {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 15px;
+      .accountModal {
+        width: 100%;
+        max-width: 800px;
+        padding-bottom: 40px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
 
-        .closeSvg {
-          cursor: pointer;
+        .closeContainer {
+          display: flex;
+          flex-direction: row-reverse;
+          margin: 15px;
+
+          .closeSvg {
+            cursor: pointer;
+          }
+        }
+
+        .modalTitle {
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        .cardContainer {
+          display: flex;
+          justify-content: space-around;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+
+        .hideAccountModal {
+          display: none;
         }
       }
-
-      .modalTitle {
-        font-size: 22px;
-        font-weight: bold;
-        margin-bottom: 60px;
-      }
-
-      .cardContainer {
-        display: flex;
-        justify-content: space-around;
-        padding-right: 30px;
-        padding-left: 30px;
-      }
-
-      .hideAccountModal {
-        display: none;
-      }
-    } 
+    }
   }
 }

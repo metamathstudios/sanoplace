@@ -1,5 +1,10 @@
 .container {
-  background: linear-gradient(295.72deg, rgba(41, 161, 220, 0.8) 0%, rgba(125, 186, 88, 0.8) 60.94%);  margin-top: 120px;
+  background: linear-gradient(
+    295.72deg,
+    rgba(41, 161, 220, 0.8) 0%,
+    rgba(125, 186, 88, 0.8) 60.94%
+  );
+  margin-top: 120px;
 
   @media (max-width: 1050px) {
     margin-top: 80px;
@@ -8,7 +13,8 @@
   .heroContainer {
     height: 87vh;
     display: grid;
-    grid-template-columns: 0.6fr 0.5fr;
+    grid-template-areas: "column1 column2";
+    grid-auto-columns: minmax(auto, 1fr);
     font-family: Poppins, sans-serif;
     color: white;
     align-items: center;
@@ -17,12 +23,14 @@
       justify-content: center;
       grid-template-columns: 1fr;
       text-align: center;
+      grid-template-areas: "column1";
     }
 
     .leftSideContainer {
       display: flex;
       justify-content: center;
-      
+      grid-area: "column1";
+
       .leftSide {
         margin-left: 40px;
         display: flex;
@@ -35,7 +43,7 @@
         @media (max-width: 680px) {
           width: 90%;
         }
-        
+
         .title {
           font-size: 55px;
           font-weight: bold;
@@ -85,7 +93,7 @@
             font-size: 23px;
           }
         }
-        
+
         .description {
           font-size: 25px;
           padding-top: 10px;
@@ -140,6 +148,14 @@
     }
 
     .rightSide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-area: "column2";
+
+      img {
+        width: 100%;
+      }
 
       @media screen and (max-width: 1200px) {
         display: none;

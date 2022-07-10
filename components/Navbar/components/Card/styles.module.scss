@@ -1,23 +1,30 @@
 .container {
+  width: 400px;
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
-  border: 1px solid rgba(128, 128, 128, 0.555);
+  border: 1px solid #dcdcdc;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .cardImage {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .description {
+    width: 90%;
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 30px;
     color: rgb(90, 89, 89);
+    text-align: center;
   }
 
   .position {
-    
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
     color: black;
@@ -25,5 +32,5 @@
 }
 
 .container:hover {
-  background-color: rgba(55, 185, 55, 0.178);
+  background-color: #f1f1f1;
 }
